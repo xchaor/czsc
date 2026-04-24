@@ -22,7 +22,7 @@ def create_single_signal(**kwargs) -> OrderedDict:
     k1, k2, k3 = kwargs.get("k1", "任意"), kwargs.get("k2", "任意"), kwargs.get("k3", "任意")
     v1, v2, v3 = kwargs.get("v1", "任意"), kwargs.get("v2", "任意"), kwargs.get("v3", "任意")
     score = kwargs.get("score", 0)
-    v = Signal(key=f"{k1}_{k2}_{k3}", value=f"{v1}_{v2}_{v3}_{score}")
+    v = Signal(f"{k1}_{k2}_{k3}_{v1}_{v2}_{v3}_{score}")
     # v = Signal(k1=k1, k2=k2, k3=k3, v1=v1, v2=v2, v3=v3, score=kwargs.get("score", 0))
     s[v.key] = v.value
     return s
