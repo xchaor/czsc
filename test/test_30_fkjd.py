@@ -103,7 +103,7 @@ class Strategy(czsc.CzscStrategyBase):
         return pos_list
 
 if __name__ == '__main__':
-    results_path = Path(r'D:\策略研究\笔非多即空')
+    results_path = Path(r'/Users/apple/Downloads/CZSC投研数据/30_fkjd')
     logger.add(results_path / "czsc.log", rotation="1 week", encoding="utf-8")
     results_path.mkdir(exist_ok=True, parents=True)
 

@@ -17,7 +17,7 @@ import pandas as pd
 import czsc
 
 # 投研共享数据的本地缓存路径，需要根据实际情况修改
-cache_path = os.environ.get("czsc_research_cache", r"D:\CZSC投研数据")
+cache_path = os.environ.get("czsc_research_cache", r"/Users/apple/Downloads/CZSC投研数据")
 if not os.path.exists(cache_path):
     raise ValueError(
         f"请设置环境变量 czsc_research_cache 为投研共享数据的本地缓存路径，当前路径不存在：{cache_path}。\n\n"
